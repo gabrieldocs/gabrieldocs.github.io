@@ -23,11 +23,42 @@
         a:hover { 
             color: rgb(52, 42, 165);
         }
+        @media screen and (max-width: 480px) {
+            .bio {
+                border-left: solid 4px rgb(236, 64, 64);
+                height: 400px;
+                background-color: rgb(243, 243, 243);
+            }
+        }
     </style>
 </head>
-<body>
-
-    <div vw class="enabled">
+<body>    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#">Gabriel Santos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/gabrieldocs" target="_blank">Meu Github <span class="sr-only">(current)</span></a>
+            </li>           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contatos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/lucas-santos-95b8b5b9/">LinkedIn</a>
+                <a class="dropdown-item" target="_blank" href="mailto:lucas.gabriel@uninta.edu.br">E-mail</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item"  target="_blank"href="https://twitter.com/lucgbrl">Twitter</a>
+              </div>
+            </li>            
+          </ul>         
+        </div>
+      </nav>
+    <!-- <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
         <div class="vw-plugin-top-wrapper"></div>
@@ -36,71 +67,104 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+    </script> -->
 
-    <main class="container">
+    <main class="container" id="app">
         <div class="row">
-            <div class="col-md-3 mt-5">
+            
+            <div class="bio col-md-4 p-5">
                 <img src="https://scontent.fqbx2-1.fna.fbcdn.net/v/t1.0-9/35548016_1755069841251713_8411250354619940864_n.jpg?_nc_cat=102&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeGDZzYj2pEP_3W0TFz3ajFU7vx5rpD0oY3u_HmukPShjYJXqauckxGxL0LRHV3aqtbYCRueSvN6B10iPhAEXGWT&_nc_ohc=e-eH5W4mHZAAX-XM3S-&_nc_ht=scontent.fqbx2-1.fna&oh=05a8321f5617001ef3743574abf21ce9&oe=60023D40" alt="">
+                <p class="mt-3">
+                    <strong>Gabriel Santos</strong>
+                    <br>
+                    <span>Engenheiro de Computação, CREA-CE nº 061972680-6</span>
+                    <br>
+                    <span>Desenvolvedor Web, UNINTA</span>        
+                    <br>
+                    <br>
+                    Currículo Lattes: <a href="http://lattes.cnpq.br/9900756329700940">CV Lattes</a>   
+                    <br>
+                    E-mail: <a href="mailto:lucas.gabriel@uninta.edu.br">lucas.gabriel@uninta.edu.br</a>            
+                </p>
             </div>
-            <div class="col-md-6 mt-5">
-                <h1 class="mb-3">Gabriel Santos</h1>
-                <p>Engenheiro de Computação, UFC, Brazil, 2020</p> 
-                <p>Desenvolvedor Web, UNINTA, Brazil, 2020 </p>    
-                Currículo Lattes: <a href="http://lattes.cnpq.br/9900756329700940">CV Lattes</a>   
-                <br>
-                E-mail: <a href="mailto:lucas.gabriel@uninta.edu.br">lucas.gabriel@uninta.edu.br</a>
+           
+            <div class="col-md-6 mt-5">                
+                <h1 class="mb-3">Gabriel Santos</h1>               
                 <h3 class="mb-3 mt-3">Sobre mim </h3>
                 <p>
-                    Desenvolvedor web, Ceará, Brasil. Atualmente trabalhando para o Centro Universitário INTA - UNINTA, na 
-                    Diretoria de Inovação Educacional. 
+                    Atualmente trabalha no Centro Universitário INTA - UNINTA, na 
+                    Diretoria de Inovação Educacional, atuando primariamente com desenvolvimento de interfaces gráficas para a web 
+                    e ferramentas disruptivas para mediação de interação com o usuário e de acessibilidade.
+
+                    <br>
+                    <br>
+                    Desenvolve ainda aplicações de machine learning com TensorFlow.JS e TensorFlow (Python) para processamento de 
+                    imagens digitais em aplicações para a internet.
+
+                    <br>
+                    <br>
+                    Possui interesse em explorar e conhecer novas tecnologias e metodologias de desenvolvimento de software/hardware.
                 </p>
+                <h3>Projetos desenvolvidos</h3>
+                <ul>
+                    <li><a href="https://ecossistema.uninta.edu.br/" target="_blank">Ecossistema de Aprendizagem Aiamis (2018)</a></li>
+                    <li><a href="http://prodipeuninta.online/comunicacao_interna/" target="_blank">Central de Comunicação Interna (2018) </a></li>
+                    <li><a href="https://catalogomateriais.aiamis.com.br/" target="_blank">Catálogo de Materiais Aiamis (2019) </a></li>
+                    <li><a href="https://experiments.uninta.edu.br/auth/login" target="_blank">Palco Virtual (2020)</a></li>
+                    <li><a href="http://napi.uninta.edu.br/" target="_blank">Núcleo de Atendimentos e Práticas Integradas - NAPI (2019)</a></li>
+                </ul>
                 <h3 class="mb-3 mt-3"> Linhas de pesquisa </h3>
                 <ul>
+                    <li>Engenharia de Software</li>
                     <li> Reconhecimento de padrões</li>
                     <li> Reconhecimento facial </li>
                     <li> Sistemas inteligentes </li>
                     <li> Sistemas de gerenciamento de aprendizado</li>
                     <li> Acessibilidade e organização da informação para a web </li>
-                    <li> Processamento digital de imagens </li>
-                    <li> Otimização de imagens para a internet </li>
+                    <li> Processamento digital de imagens / Otimização de imagens para a internet </li>
                 </ul>
                 <h3 class="mb-3 mt-3"> Interesses </h3>
                 <ul>
                     <li> Desenvolvimento Web </li>
                     <li> Design de Interface gráfica </li>
                     <li> Frontend development </li>
-                    <li> Ciência dos dados </li>
-                    <li> Machine Learning </li>
+                    <li> Ciência dos dados / Teoria da Informação / Machine Learning </li>
                     <li> Web Content Accessibility Guidelines (WCAG) </li>
                 </ul>
                 <h3 class="mb-3 mt-3">Habilidades</h3>
                 <p> Possui conhecimento prático com as seguintes linguagens/ferramentas/Sistemas Operacionais </p>
                 <ul>
                     <li> HTML </li>
-                    <li> CSS </li>
+                    <li> CSS 
+                        <ol>
+                            <li> CSS 3 puro </li>
+                            <li> Framework Bootstrap 4.x </li>
+                            <li> Framework Bulma CSS </li>
+                            <li> Framework Materialize CSS</li>
+                        </ol>
+                    </li>
                     <li> JavaScript
                         <ol>
                             <li> NodeJS </li>
                             <li> Express </li>
-                            <li> Vue JS </li>
-                            <li> React JS</li>
+                            <li> Framework Vue JS </li>
+                            <li> Framework React JS</li>
                             <li> Sequelize ORM </li>
                         </ol>
 
                     </li>                    
                     <li> PHP
                         <ol>
-                            <li> OOP </li>
-                            <li> CodeIgniter 3 </li>
-                            <li> Laravel 7 e 8</li>
+                            <li> PHP 7.x puro </li>
+                            <li> Framework CodeIgniter 3 </li>
+                            <li> Framework Laravel 7 e 8</li>
                         </ol>
                     </li>
                     <li> Python
                         <ol>
-                            <li> TensorFlow </li>
-                            <li> Django 2.0+</li>
-                            <li> Flask </li>
+                            <li> AI Framework TensorFlow </li>
+                            <li> Framework Django 2.0+</li>
+                            <li> Micro Web Framework Flask </li>
                         </ol>
                     </li>
                     <li> SQL
@@ -118,7 +182,7 @@
                     </li>
                 </ul>
                 <h3 class="mb-3 mt-3"> Outros interesses </h3>
-                <p> Cinema, Fotografia, Ilustração.</p>
+                <p> Cinema, Fotografia, Ilustração e história.</p>
             </div>
         </div>
     </main>
